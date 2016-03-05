@@ -18,16 +18,15 @@ function checkform()
 if (!validateEmail(user)) {
   alert("invalid email");
   return false;
-}
-
-if (It1== ''||It2==''||It3=='') {
+}else if (It1== ''||It2==''||It3=='') {
   alert ("invalid number of items");
   return false;
-}
-if (password=='') {
+}else if (password=='') {
   alert("invalid password");
+  return false;
 }
-
+  document.getElementById("shoppingform").submit();
+  return true;
 
 
 }

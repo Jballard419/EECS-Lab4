@@ -1,0 +1,22 @@
+table {
+    border-collapse: collapse;
+}
+
+ th, td
+{
+  padding: 15px;
+  background-color: lightblue;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+td.blank
+{
+  background-color: white;
+}
+td.text
+{
+  background-color:gray ;
+  text-align: center;
+
+
+}

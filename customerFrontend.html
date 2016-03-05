@@ -9,22 +9,22 @@
 
 	<body>
 
-    <form >
+    <form Id="shoppingform" action="customerBackend.php" method="post">
       items to buy<br>
     <br>question 1: </br>
     Which items would you like to buy </br>
-     <input type="number" Id="q1" value=0 min="0" checked> item 1 $35.00<br>
-     <input type="number" Id="q2" value=0 min="0" checked> item 2 $40.00<br>
-     <input type="number" Id="q3" value=0 min="0" max="100" checked> item 3 $9001.00<br>
+     <input type="number" Id="q1" name="q1"value=0 min="0" checked> item 1 $35.00<br>
+     <input type="number" Id="q2" name="q2" value=0 min="0" checked> item 2 $40.00<br>
+     <input type="number" Id="q3" name="q3" value=0 min="0" max="100" checked> item 3 $9000.01<br>
      What type of shipping would you like? </br>
-      <input type="radio" Id="Sh" value=0 checked > Free 7 day  <br>
-      <input type="radio" Id="Sh" value=50.00> $50.00 over night <br>
-      <input type="radio" Id="Sh" value=5.00> $5.00 three day <br>
-      <input type="text" Id="username" value="" checked> username:<br>
-      <input type="text" Id="password" value="" checked> password: <br>
+      <input type="radio" Id="Sh" name="Sh" value=0 checked > Free 7 day  <br>
+      <input type="radio" Id="Sh" name="Sh" value=50.00> $50.00 over night <br>
+      <input type="radio" Id="Sh" name="Sh" value=5.00> $5.00 three day <br>
+      <input type="text" Id="username" name="username" value="" checked> username:<br>
+      <input type="text" Id="password" name="password" value="" checked> password: <br>
 
       <input type="reset" value="Reset ">
-      <input type="submit"  onclick="checkform()">
+      <input type="button" value="submit"  onclick="checkform()">
 
 
     </form>
