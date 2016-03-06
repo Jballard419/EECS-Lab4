@@ -1,6 +1,42 @@
 table {
     border-collapse: collapse;
 }
+input[type=number]{
+
+  width: 10%;
+}
+input:focus {
+    background-color: lightblue;
+}
+input[type=text], input[type=password]  {
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    width: 20%;
+}
+form{
+
+  width: 50%;
+    background-color: #4CAF50;
+
+}
+body.test
+{
+  background-color: black;
+  color:white;
+
+
+
+}
+body.pass
+{
+  background-color: lightblue;
+}
+input[type=text]:focus, input[type=password]:focus {
+    width: 40%;
+}
+
+
+
 
  th, td
 {
@@ -18,5 +54,16 @@ td.text
   background-color:gray ;
   text-align: center;
 
+
+}
+
+b
+{
+
+  font-size: 20px;
+
+}
+fire{
+  font-size: 50px;
 
 }
