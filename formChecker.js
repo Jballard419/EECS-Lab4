@@ -1,7 +1,12 @@
-function validateEmail(email)
+function validEmail(text)
 {
-    var re = /\S+@\S+\.\S+/;
-    return re.test(email);
+  if(text.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)) {
+    return true;
+  }
+  else
+  {
+    return false;
+  }
 }
 function checkform()
 {
@@ -15,7 +20,7 @@ function checkform()
   var shipping = document.getElementById('Sh').value;
 
 
-if (!validateEmail(user)) {
+if (!validEmail(user)) {
   alert("invalid email");
   return false;
 }else if (It1== ''||It2==''||It3=='') {

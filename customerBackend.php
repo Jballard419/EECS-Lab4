@@ -20,20 +20,20 @@ echo "<td class='text'> Quantity  </td>";
 echo "<td class='text'> Cost Per Item   </td>";
 echo "<td class='text'> Sub Total </td> </tr>";
 
-echo "<tr> <td class='text'> Item 1 </td> ";
+echo "<tr> <td class='text'> all materia </td> ";
 echo "<td>". $q1. "</td>";
-echo "<td> $35.00 </td>";
-echo "<td> $". ($q1*35.00). "</td> </tr>";
+echo "<td> $35.02 </td>";
+echo "<td> $". ($q1*35.02). "</td> </tr>";
 
-echo "<tr> <td class='text'> Item 2 </td> ";
+echo "<tr> <td class='text'> cure materia </td> ";
 echo "<td>". $q2. "</td>";
 echo "<td> $40.00 </td>";
 echo "<td> $". ($q2*40.00). "</td> </tr>";
 
-echo "<tr> <td class='text'> Item 3 </td> ";
+echo "<tr> <td class='text'> Steal materia </td> ";
 echo "<td>". $q3. "</td>";
-echo "<td> $9000.01</td>";
-echo "<td> $". ($q3*9000.01). "</td> </tr>";
+echo "<td> $90.83</td>";
+echo "<td> $". ($q3*90.83). "</td> </tr>";
 
 echo "<tr> <td class='text'> Shipping </td> ";
 if($Sh=0){
@@ -49,7 +49,7 @@ if($Sh=0){
 
 }
 echo "<td> $". $Sh. "</td> </tr>";
-$cost= ($q1*35.00)+ ($q2*40.00) + ($q3*9000.01)+ $Sh;
+$cost= ($q1*35.02)+ ($q2*40.00) + ($q3*90.83)+ $Sh;
 
 echo" <tr> <td class='text'> Total <td> <td> </td> </td> </td> ";
 
